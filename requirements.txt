@@ -20,7 +20,7 @@ cffi==1.15.1
 charset-normalizer==3.2.0
 click==8.1.7
 cloudinary==1.36.0
-cryptography==41.0.4
+cryptography==42.0.4
 curl_cffi==0.6.2
 dnspython==2.4.1
 duckduckgo_search==5.1.0
