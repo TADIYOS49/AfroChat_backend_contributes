@@ -1,0 +1,140 @@
+.
+├── Dockerfile.dev
+├── Dockerfile.production
+├── README.md
+├── Tutorial.ipynb
+├── alembic.ini
+├── app
+│   ├── __init__.py
+│   ├── bot
+│   │   ├── __init__.py
+│   │   ├── api_requests
+│   │   │   └── __init__.py
+│   │   ├── bot_commands.py
+│   │   ├── bot_state.py
+│   │   ├── features
+│   │   │   ├── __init__.py
+│   │   │   ├── ask
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── handlers.py
+│   │   │   │   ├── keyboards.py
+│   │   │   │   └── texts.py
+│   │   │   ├── chat
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── handlers.py
+│   │   │   │   ├── keyboards.py
+│   │   │   │   └── texts.py
+│   │   │   ├── global_handler.py
+│   │   │   ├── menu
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── handlers.py
+│   │   │   │   ├── keyboards.py
+│   │   │   │   └── texts.py
+│   │   │   ├── persona
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── handlers.py
+│   │   │   │   ├── keyboards.py
+│   │   │   │   └── texts.py
+│   │   │   └── tools
+│   │   │       ├── __init__.py
+│   │   │       ├── handlers.py
+│   │   │       ├── keyboards.py
+│   │   │       └── texts.py
+│   │   ├── folder_structure.txt
+│   │   └── person_list.py
+│   ├── database
+│   │   ├── __init__.py
+│   │   ├── base.py
+│   │   └── database.py
+│   ├── database_operations
+│   │   └── __init__.py
+│   ├── exceptions.py
+│   ├── models
+│   │   ├── TelegramAsk.py
+│   │   ├── TelegramConversation.py
+│   │   ├── TelegramUser.py
+│   │   └── __init__.py
+│   ├── routers
+│   │   ├── __init__.py
+│   │   └── api_v1
+│   │       ├── Auth
+│   │       │   ├── constants.py
+│   │       │   ├── dependencies.py
+│   │       │   ├── exceptions.py
+│   │       │   ├── models.py
+│   │       │   ├── router.py
+│   │       │   ├── schemas.py
+│   │       │   ├── service.py
+│   │       │   └── utils.py
+│   │       ├── Persona
+│   │       │   ├── constants.py
+│   │       │   ├── dependencies.py
+│   │       │   ├── exceptions.py
+│   │       │   ├── models.py
+│   │       │   ├── router.py
+│   │       │   ├── schemas.py
+│   │       │   ├── service.py
+│   │       │   └── utils.py
+│   │       ├── __init__.py
+│   │       └── users.py
+│   ├── schemas
+│   │   ├── __init__.py
+│   │   ├── ask.py
+│   │   └── user.py
+│   └── utils
+│       ├── __init__.py
+│       ├── logger.py
+│       ├── singeleton.py
+│       └── utils.py
+├── benchmarks
+│   └── Database Test.jmx
+├── config.py
+├── docker-compose.yml
+├── folder_structure.txt
+├── init.sql
+├── logs
+│   ├── __init__.py
+│   ├── fastapi.log
+│   └── sqlalchemy.log
+├── main.py
+├── migrations
+│   ├── README
+│   ├── script.py.mako
+│   └── versions
+│       ├── 047cd2c5c8d4_added_user_table.py
+│       ├── 15e990730ca3_quotes_and_persona_table.py
+│       ├── 183b06b9c722_miner_fix_on_ask_model.py
+│       ├── 199c477f3ae0_ask_model_added.py
+│       ├── 1e8e9e1f2a15_added_telegram_options_for_user.py
+│       ├── 29ae4356a08c_fixed_prompt_spelling.py
+│       ├── 2a90d6a024c1_is_admin_column_added_to_table_user.py
+│       ├── 342b517a24e2_changed_the_database_names.py
+│       ├── 3433864b439f_changed_user_and_ask_database_names.py
+│       ├── 3861f6f903c2_added_age_and_last_name.py
+│       ├── 3e2d933fa0e9_changed_total_token_to_total_toekns.py
+│       ├── 3f6519922a98_removed_all_the_columns_that_are_going_.py
+│       ├── 4b46c55451ef_changed_user_and_ask_database_names.py
+│       ├── 5b417f644db5_changed_ask_and_message_table_names.py
+│       ├── 5eb8be083ce4_removed_ask_model.py
+│       ├── 67b90d0e6c2d_added_token.py
+│       ├── 7baa6abdbfa1_added_otp_table.py
+│       ├── 7fe27075abed_fix.py
+│       ├── 9121f8a212c2_added_conversation_and_messages.py
+│       ├── 95019d68effe_add_ask_model.py
+│       ├── 9a411a2a64e2_ask_model_fix.py
+│       ├── a6d7a39842d5_increased_the_size_of_varchar_for_all_.py
+│       ├── c223436ff1af_add_ask_model.py
+│       ├── c72e660b696b_remove_test.py
+│       ├── e54b5666a14a_changed_the_table_name_for_the_.py
+│       ├── f34f32debea6_remove_test.py
+│       ├── f57206891beb_miner_fix_on_ask_model.py
+│       └── fa9bd44b0b44_increase_word_length.py
+├── requirements.txt
+└── tests
+    ├── __init__.py
+    ├── apis
+    │   ├── __init__.py
+    │   └── test_auth_modeule.py
+    └── conftest.py
+
+25 directories, 113 files
