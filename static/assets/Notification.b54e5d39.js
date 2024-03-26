@@ -1,0 +1,1 @@
+import{c3 as c}from"./index.9318a740.js";const n=(o,t="positive",e="top",i=1e3,a="done")=>{c.create({message:o,color:t,position:e,timeout:i,icon:a})},s=(o,t="negative",e="top",i=2e3,a="warning")=>{c.create({message:o,color:t,position:e,timeout:i,icon:a})};export{s as E,n as S};
