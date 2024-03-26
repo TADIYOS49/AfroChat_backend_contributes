@@ -1,2 +1,2 @@
 # AfroChat_backend_contribution
-This is my contribution for AfroChat project as a back-end developer. Since I wasn't able to share the full code base with you due to restrictions, I took my contribution into another repository.
+This is the full AfroChat backend system. My contribution here is only specifically for the Ask module and chat module which can be found on /afrochat_backend/app/routers/api_v1/Ask and /afrochat_backend/app/routers/api_v1/chat. The rest is contributed by my colleagues from the AfroChat team. Since our organization is on github and our repo is private by the organization I can only show the backend in my personal account as my personal public repo for the purpose of this program. Thank you.
