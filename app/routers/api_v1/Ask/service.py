@@ -29,11 +29,7 @@ from app.routers.api_v1.Auth.exceptions import RECAPTCHA_FAILED
 from app.routers.api_v1.Service.schemas import Meta, Paginate
 from app.routers.api_v1.Service.utils import paginate_response
 from app.routers.api_v1.chat.models import ChatSession
-<<<<<<< HEAD
 from duckduckgo_search import DDGS, AsyncDDGS
-=======
-from duckduckgo_search import AsyncDDGS
->>>>>>> a7d0555a (change logic)
 
 from app.utils.logger import FastApiLogger
 from .constants import summary_prompt, recommendations_prompt
@@ -43,14 +39,8 @@ from app.routers.api_v1.Auth.service import verify_recaptcha
 
 
 async def aget_results(query: str, max_results: int = 5):
-<<<<<<< HEAD
     results = await AsyncDDGS(proxies=None).text(query, max_results=max_results)
     return results
-=======
-    async with AsyncDDGS() as ddgs:
-        results = [r async for r in ddgs.text(query, max_results=max_results)]
-        return results
->>>>>>> a7d0555a (change logic)
 
 
 def get_summary_messages(question, search_results):
@@ -123,13 +113,10 @@ async def ask_model(question, model):
 
 
 async def ask_service(ask_request: AskRequest, user: User, db_session: AsyncSession):
-<<<<<<< HEAD
     # validate the token
     if await verify_recaptcha(ask_request.recaptcha_token) is False:
         raise RECAPTCHA_FAILED
 
-=======
->>>>>>> a7d0555a (change logic)
     response, total_tokens = await ask_model(ask_request.question, ask_request.model)
 
     try:

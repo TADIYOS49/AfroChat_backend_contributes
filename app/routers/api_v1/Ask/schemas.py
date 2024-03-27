@@ -10,22 +10,14 @@ from app.routers.api_v1.Ask.models import AskMessage, AskSession, MessageFrom
 
 class AskRequest(BaseModel):
     question: str
-<<<<<<< HEAD
     model: LLMModels = LLMModels.MISTRAL
-=======
-    model: LLMModels
->>>>>>> a7d0555a (change logic)
     message_from: MessageFrom = MessageFrom.MOBILE_APP
     recaptcha_token: str | None = None
 
 
 class AskFollowUpRequest(BaseModel):
     question: str
-<<<<<<< HEAD
     model: LLMModels = LLMModels.MISTRAL
-=======
-    model: LLMModels
->>>>>>> a7d0555a (change logic)
     message_from: MessageFrom = MessageFrom.MOBILE_APP
     ask_session_id: UUID
 
