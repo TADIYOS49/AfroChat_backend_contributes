@@ -22,7 +22,7 @@ click==8.1.7
 cloudinary==1.36.0
 cryptography==41.0.4
 curl_cffi==0.6.2
-dnspython==2.4.1
+dnspython==2.6.1
 duckduckgo_search==5.1.0
 ecdsa==0.18.0
 email-validator==2.0.0.post2
